@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN </title>
+    <link rel="stylesheet" href="ia2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navs">
+            <label class="logo">AIESEC</label>
+            <div  class="hidden" id="links">
+                <i class="fas fa-times" onclick="HideMenu()"></i>
+                <ul class="links">
+                    <li ><a href="" >HOME</a></li>
+                    <li ><a href="">ABOUT</a></li>
+                    <li ><a href="">SERVICE</a></li>
+                    <li ><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <div class="form-box">
+            <i class="fas fa-times"  ></i>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form >
+                    <div class="input">
+                        <input type="text" placeholder="Email or Phone" required>
+                    </div>
+                    <div class="input">
+                        <input type="password" placeholder="password" required>
+                    </div>
+                    <a href="#" class="forget-pass" >Forget password</a>
+                    <button type="submit">Log in</button>
+                </form>
+                <div class="button-link">
+                    <span>Don't have an account ?</span>
+                    <a href="">Signup</a>
+                </div>
+            </div>
+        </div>
+        </header>
+        
+    <script>
+        var navlink=document.getElementById("links");
+        function ShowMenu(){
+            navlink.style.right="0";
+        }
+        function HideMenu(){
+            navlink.style.right="-200px";}
+    </script>
+</body>
+</html>
